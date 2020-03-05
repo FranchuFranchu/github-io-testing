@@ -2,6 +2,14 @@
 <html>
 <head>
     <title></title>
+    <script>
+        fetch('https://emcice.pythonanywhere.com/data.js')
+  .then((response) => {
+    return response.body;
+  })
+  .then((data) => {
+    console.log(data);
+  });</script>
 </head>
 <body>
   Test
